@@ -3,61 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WhatsApp Chat Button</title>
+    <title>Redirecting...</title>
+    
+    <!-- Meta tag for automatic redirect -->
+    <meta http-equiv="refresh" content="0; url=https://wa.me/917390928912?text=Hello%20%F0%9F%91%8B%0AI%20came%20across%20your%20ad%20and%20I%E2%80%99m%20interested.%0ACan%20you%20please%20share%20more%20details%20about%20your%20service%20and%20pricing%3F">
+
     <style>
-        /* Button ka design (CSS) */
         body {
             font-family: Arial, sans-serif;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background-color: #f4f4f9;
+            margin: 0;
+            background-color: #ffffff;
         }
-
-        .whatsapp-button {
-            display: inline-flex;
-            align-items: center;
-            background-color: #25D366; /* WhatsApp ka official green color */
-            color: white;
-            text-decoration: none;
-            font-size: 18px;
-            font-weight: bold;
-            padding: 15px 30px;
-            border-radius: 50px;
-            box-shadow: 0 4px 10px rgba(37, 211, 102, 0.4);
-            transition: all 0.3s ease-in-out;
-        }
-
-        /* Hover effect (Jab mouse upar layenge tab kaisa dikhega) */
-        .whatsapp-button:hover {
-            background-color: #128C7E; /* Thoda dark green */
-            box-shadow: 0 6px 15px rgba(18, 140, 126, 0.5);
-            transform: translateY(-2px);
-        }
-
-        /* WhatsApp icon styling */
-        .whatsapp-icon {
-            width: 24px;
-            height: 24px;
-            margin-right: 10px;
+        .loading {
+            text-align: center;
+            color: #555;
         }
     </style>
 </head>
 <body>
 
-    <!-- WhatsApp Link -->
-    <!-- Note: Message ko URL Encode kiya gaya hai taaki spaces aur new lines theek se kaam karein -->
-    <a href="https://wa.me/917390928912?text=Hello%20%F0%9F%91%8B%0AI%20came%20across%20your%20ad%20and%20I%E2%80%99m%20interested.%0ACan%20you%20please%20share%20more%20details%20about%20your%20service%20and%20pricing%3F" 
-       class="whatsapp-button" 
-       target="_blank">
-        
-        <!-- WhatsApp ka logo -->
-        <svg class="whatsapp-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="currentColor">
-            <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zM223.9 414.8c-33.2 0-65.8-8.9-94-25.7l-6.7-4-69.8 18.3L72 334.1l-4.4-7.1c-18.9-30.6-28.9-66-28.9-102.2 0-106.2 86.5-192.7 192.9-192.7 51.4 0 99.8 20 136.2 56.4 36.4 36.4 56.4 84.9 56.4 136.3 0 106.3-86.5 192.8-192.9 192.8zm103.5-141.6c-5.7-2.8-33.6-16.6-38.8-18.5-5.2-1.9-9-2.8-12.8 2.8-3.8 5.7-14.7 18.5-18 22.3-3.3 3.8-6.6 4.3-12.3 1.4-5.7-2.8-24-8.9-45.7-28.3-16.9-15.1-28.3-33.8-31.6-39.5-3.3-5.7-.4-8.8 2.5-11.6 2.6-2.6 5.7-6.6 8.5-10 2.8-3.3 3.8-5.7 5.7-9.5 1.9-3.8.9-7.1-.5-9.5-1.4-2.4-12.8-30.9-17.6-42.3-4.6-11.1-9.3-9.6-12.8-9.8-3.3-.2-7.1-.2-10.9-.2-3.8 0-10 1.4-15.2 7.1-5.2 5.7-20 19.4-20 47.4 0 28 20.4 55.1 23.2 58.8 2.8 3.8 40 61.2 96.9 85.7 13.5 5.8 24 9.3 32.2 11.9 13.6 4.3 26 3.7 35.8 2.2 10.9-1.7 33.6-13.7 38.3-27 4.7-13.3 4.7-24.7 3.3-27-1.4-2.3-5.2-3.8-10.9-6.6z"/>
-        </svg>
-        Message Us on WhatsApp
-    </a>
+    <div class="loading">
+        <p>Redirecting to WhatsApp...</p>
+    </div>
+
+    <!-- JavaScript as a backup for instant redirect -->
+    <script>
+        window.location.href = "https://wa.me/917390928912?text=Hello%20%F0%9F%91%8B%0AI%20came%20across%20your%20ad%20and%20I%E2%80%99m%20interested.%0ACan%20you%20please%20share%20more%20details%20about%20your%20service%20and%20pricing%3F";
+    </script>
 
 </body>
 </html>
