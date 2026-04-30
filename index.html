@@ -1,1 +1,1101 @@
 
+<!DOCTYPE html>
+<html class="dark scroll-smooth" lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>VELVET TOUCH VIP | Exclusive High-End Spa & Companionship</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    
+    <!-- Sexy & Elegant Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        'hot-pink': '#FF1493',
+                        'deep-red': '#5C001E', /* Deeper, more luxurious red */
+                        'neon-pink': '#FF2A70',
+                        'dark-bg': '#050001', /* Almost pitch black for OLED elegance */
+                        'dark-surface': '#0f0003',
+                        'pink-light': '#FFB3D9',
+                        'primary-gold': '#D4AF37',
+                        'champagne': '#F7E7CE'
+                    },
+                    fontFamily: {
+                        'sans': ['Montserrat', 'sans-serif'],
+                        'serif': ['Playfair Display', 'serif'],
+                        'cinzel': ['Cinzel', 'serif'],
+                    },
+                    backgroundImage: {
+                        'gold-gradient': 'linear-gradient(to right, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C)',
+                        'red-gradient': 'linear-gradient(135deg, #5C001E 0%, #1a0008 100%)',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        body { 
+            background-color: #050001; 
+            color: #ffe6f0; 
+            overflow-x: hidden;
+            background-image: radial-gradient(circle at 50% 0%, rgba(92, 0, 30, 0.15) 0%, transparent 50%);
+        }
+        
+        /* Ultra-Premium Glassmorphism */
+        .glass-panel {
+            background: rgba(15, 0, 3, 0.6);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(212, 175, 55, 0.1);
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .glass-panel:hover {
+            background: rgba(92, 0, 30, 0.4);
+            border-color: rgba(212, 175, 55, 0.4);
+            box-shadow: 0 10px 40px -10px rgba(212, 175, 55, 0.15);
+            transform: translateY(-5px);
+        }
+
+        /* Sophisticated Text Effects */
+        .text-glow { text-shadow: 0 0 20px rgba(212, 175, 55, 0.3); }
+        .gold-glow { box-shadow: 0 0 20px rgba(212, 175, 55, 0.2); }
+        
+        /* Premium Gradients */
+        .text-gradient {
+            background: linear-gradient(to right, #D4AF37, #FFF8DC, #D4AF37);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-size: 200% auto;
+            animation: shine 5s linear infinite;
+        }
+        .text-gradient-red {
+            background: linear-gradient(to right, #FF2A70, #FF1493);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        @keyframes shine {
+            to { background-position: 200% center; }
+        }
+
+        .gold-divider { 
+            height: 1px; 
+            background: linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.5), transparent); 
+            width: 100%; 
+        }
+
+        .hero-overlay {
+            background: linear-gradient(to bottom, rgba(5,0,1,0.3) 0%, rgba(5,0,1,0.8) 70%, #050001 100%);
+        }
+
+        /* High-End Golden Frame for Gallery */
+        .golden-frame {
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            border-radius: 4px;
+            overflow: hidden;
+            position: relative;
+            transition: all 0.5s ease;
+        }
+        .golden-frame::after {
+            content: ''; position: absolute; inset: 0;
+            border: 1px solid rgba(212, 175, 55, 0.6);
+            margin: 8px;
+            pointer-events: none;
+            opacity: 0.5;
+            transition: opacity 0.5s ease;
+        }
+        .golden-frame:hover {
+            border-color: rgba(212, 175, 55, 0.8);
+            box-shadow: 0 0 30px rgba(212, 175, 55, 0.2);
+        }
+        .golden-frame:hover::after {
+            opacity: 1;
+        }
+
+        /* Custom Scrollbar for Gallery */
+        .custom-scroll::-webkit-scrollbar { height: 6px; }
+        .custom-scroll::-webkit-scrollbar-track { background: rgba(255,255,255,0.05); border-radius: 10px; }
+        .custom-scroll::-webkit-scrollbar-thumb { background: rgba(212, 175, 55, 0.5); border-radius: 10px; }
+        .custom-scroll::-webkit-scrollbar-thumb:hover { background: rgba(212, 175, 55, 0.8); }
+
+        /* Premium Buttons */
+        .btn-gold {
+            background: linear-gradient(to right, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
+            background-size: 200% auto;
+            color: #000;
+            transition: all 0.5s ease;
+        }
+        .btn-gold:hover {
+            background-position: right center;
+            box-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
+            transform: translateY(-2px);
+        }
+
+        .btn-outline {
+            border: 1px solid #D4AF37;
+            color: #D4AF37;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+            transition: all 0.5s ease;
+        }
+        .btn-outline::before {
+            content: ''; position: absolute; top: 0; left: -100%; width: 100%; height: 100%;
+            background: rgba(212, 175, 55, 0.1); transition: all 0.5s ease; z-index: -1;
+        }
+        .btn-outline:hover::before { left: 0; }
+        .btn-outline:hover { box-shadow: 0 0 15px rgba(212, 175, 55, 0.2); }
+
+        /* Status Dot */
+        .status-dot {
+            height: 8px; width: 8px; background-color: #22c55e; border-radius: 50%;
+            display: inline-block; box-shadow: 0 0 8px #22c55e;
+            animation: pulse-green 2s infinite;
+        }
+        @keyframes pulse-green { 0% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7); } 70% { box-shadow: 0 0 0 6px rgba(34, 197, 94, 0); } 100% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0); } }
+
+        /* Chat System & Modals (Preserved Functionality but upgraded looks) */
+        .modal-overlay {
+            display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0,0,0,0.85); z-index: 9999; justify-content: center; align-items: center; backdrop-filter: blur(10px);
+        }
+
+        .chat-container {
+            display: none; position: fixed; bottom: 30px; right: 30px; width: 380px; height: 550px;
+            background: rgba(15, 0, 3, 0.95); border: 1px solid #D4AF37; border-radius: 12px; 
+            box-shadow: 0 15px 40px rgba(0,0,0,0.8), 0 0 20px rgba(212,175,55,0.15);
+            z-index: 9998; flex-direction: column; overflow: hidden; backdrop-filter: blur(10px);
+        }
+        @media (max-width: 768px) {
+            .chat-container { width: 100%; height: 100%; bottom: 0; right: 0; border-radius: 0; border: none; }
+        }
+        .chat-header {
+            background: linear-gradient(135deg, #1a0008 0%, #050001 100%); border-bottom: 1px solid rgba(212,175,55,0.2);
+            color: #D4AF37; padding: 18px 20px; display: flex; justify-content: space-between; align-items: center;
+        }
+        .chat-messages {
+            flex: 1; padding: 20px; overflow-y: auto; display: flex; flex-direction: column; gap: 12px;
+            background: rgba(0,0,0,0.4);
+        }
+        .message { max-width: 82%; padding: 12px 16px; border-radius: 12px; font-size: 14px; word-wrap: break-word; line-height: 1.5; }
+        /* Keeping JS classes but overriding styles beautifully */
+        .msg-user { background: linear-gradient(135deg, #D4AF37 0%, #AA771C 100%); color: #000; align-self: flex-end; border-bottom-right-radius: 2px; font-weight: 500;}
+        .msg-admin { background: #1a1a1a; color: #FFF8DC; align-self: flex-start; border-bottom-left-radius: 2px; border: 1px solid #333; }
+        .message img { max-width: 100%; border-radius: 6px; margin-top: 8px; border: 1px solid rgba(255,255,255,0.1); }
+        .chat-input { display: flex; padding: 15px; background: #0a0a0a; border-top: 1px solid rgba(212,175,55,0.2); align-items: center; gap: 10px;}
+        .chat-input input { flex: 1; background: #1a1a1a; border: 1px solid #333; color: white; padding: 12px 16px; border-radius: 30px; outline:none; transition: all 0.3s;}
+        .chat-input input:focus { border-color: #D4AF37; }
+        .chat-input button { background: transparent; color: #D4AF37; border: none; cursor: pointer; transition: all 0.3s; display: flex; align-items: center; justify-content: center;}
+        #clientSendBtn, #adminSendBtn { background: #D4AF37; color: #000; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 18px;}
+        #clientSendBtn:hover, #adminSendBtn:hover { transform: scale(1.05); }
+
+        /* Admin UI */
+        .admin-panel {
+            display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: #050001; z-index: 10000; flex-direction: row; color: white;
+        }
+        .user-list { width: 320px; background: #0a0a0a; border-right: 1px solid #333; overflow-y: auto; }
+        .user-item { padding: 18px; border-bottom: 1px solid #1f1f1f; cursor: pointer; display: flex; justify-content: space-between; align-items: center; transition: background 0.3s;}
+        .user-item:hover { background: #1a1a1a; border-left: 3px solid #D4AF37; }
+        .admin-chat-area { flex: 1; display: flex; flex-direction: column; background: #050001; }
+        .secret-btn { position: fixed; bottom: 10px; right: 10px; width: 20px; height: 20px; background-color: transparent; border-radius: 50%; cursor: pointer; z-index: 50; }
+        
+        /* Video Call Button Animation */
+        @keyframes pulse-ring { 0% { box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.7); } 70% { box-shadow: 0 0 0 15px rgba(212, 175, 55, 0); } 100% { box-shadow: 0 0 0 0 rgba(212, 175, 55, 0); } }
+        .video-btn-active { animation: pulse-ring 2s infinite; background: linear-gradient(to right, #D4AF37, #AA771C) !important; color: #000 !important; font-weight: bold; border-radius: 0 0 12px 12px;}
+
+        /* Image hover fade */
+        .img-fade-overlay {
+            background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.4) 50%, transparent 100%);
+        }
+    </style>
+</head>
+
+<body class="font-sans antialiased selection:bg-primary-gold selection:text-black">
+
+    <!-- Premium Navigation -->
+    <nav class="fixed top-0 w-full z-50 border-b border-white/5 bg-dark-bg/80 backdrop-blur-xl transition-all duration-300">
+        <div class="flex justify-between items-center w-full px-6 md:px-12 py-4 max-w-7xl mx-auto">
+            <div class="flex items-center gap-2">
+                <!-- Royal Emblem Icon -->
+                <span class="material-symbols-outlined text-primary-gold text-3xl">diamond</span>
+                <div class="text-xl md:text-2xl font-cinzel font-bold tracking-[0.2em] text-white">
+                    VELVET <span class="text-primary-gold">TOUCH</span>
+                </div>
+            </div>
+            
+            <div class="hidden lg:flex gap-10 items-center">
+                <a class="text-[11px] uppercase tracking-[0.2em] font-semibold text-white/60 hover:text-primary-gold transition-colors" href="#about">The Philosophy</a>
+                <a class="text-[11px] uppercase tracking-[0.2em] font-semibold text-white/60 hover:text-primary-gold transition-colors" href="#gallery">VIP Companions</a>
+                <a class="text-[11px] uppercase tracking-[0.2em] font-semibold text-white/60 hover:text-primary-gold transition-colors" href="#services">Exclusive Rituals</a>
+                <button class="text-[11px] uppercase tracking-[0.2em] font-semibold text-primary-gold flex items-center gap-1 hover:text-white transition-colors openChatBtn">
+                    <span class="material-symbols-outlined text-[14px]">support_agent</span> Concierge
+                </button>
+            </div>
+            
+            <button class="hidden md:inline-flex items-center justify-center px-8 py-3 btn-gold text-[11px] tracking-[0.2em] uppercase font-bold rounded-sm openChatBtn">
+                Book Sanctuary
+            </button>
+            
+            <!-- Mobile Menu Icon (Visual Only) -->
+            <button class="lg:hidden text-primary-gold openChatBtn">
+                <span class="material-symbols-outlined text-3xl">menu</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Ultra-Luxurious Hero Section -->
+    <header class="relative w-full h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <!-- High-end dark sensual image -->
+            <img class="w-full h-full object-cover opacity-40 mix-blend-lighten scale-105 animate-[pulse_20s_ease-in-out_infinite]" src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=2070&auto=format&fit=crop" alt="Luxury VIP Spa" />
+            <div class="absolute inset-0 hero-overlay"></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-[#050001] via-transparent to-transparent"></div>
+        </div>
+
+        <div class="relative z-10 text-center px-4 max-w-5xl mx-auto flex flex-col items-center mt-16">
+            <div class="flex items-center gap-4 mb-6">
+                <div class="h-[1px] w-12 bg-primary-gold/50"></div>
+                <p class="text-[10px] md:text-xs text-primary-gold uppercase tracking-[0.5em] font-semibold">Strictly Confidential & Elite</p>
+                <div class="h-[1px] w-12 bg-primary-gold/50"></div>
+            </div>
+            
+            <h1 class="font-cinzel text-5xl md:text-7xl lg:text-8xl text-white mb-6 leading-[1.1] drop-shadow-2xl font-medium">
+                The Pinnacle of <br />
+                <span class="text-gradient italic font-serif">Sensory Pleasure</span>
+            </h1>
+            
+            <p class="font-sans text-base md:text-lg text-champagne/70 max-w-2xl mb-12 font-light leading-relaxed">
+                Step into a world of ultimate seduction and absolute privacy. Our elite therapies and top-tier companions are designed to melt your stress and ignite your deepest passions.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-5">
+                <button class="px-10 py-4 btn-gold text-xs uppercase tracking-[0.2em] font-bold rounded-sm openChatBtn">
+                    Initiate Booking
+                </button>
+                <a class="px-10 py-4 btn-outline text-xs uppercase tracking-[0.2em] font-bold rounded-sm flex items-center justify-center gap-2" href="#gallery">
+                    Explore Gallery <span class="material-symbols-outlined text-sm">arrow_downward</span>
+                </a>
+            </div>
+        </div>
+        
+        <!-- Scroll indicator -->
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 flex flex-col items-center opacity-50 animate-bounce">
+            <span class="text-[10px] uppercase tracking-[0.3em] text-primary-gold mb-2">Scroll to Discover</span>
+            <span class="material-symbols-outlined text-primary-gold">mouse</span>
+        </div>
+    </header>
+
+    <div class="gold-divider"></div>
+
+    <!-- The Philosophy / About Section (NEW) -->
+    <section id="about" class="py-24 px-6 relative bg-dark-bg">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div class="relative group">
+                <div class="absolute -inset-4 border border-primary-gold/20 transform translate-x-4 translate-y-4 group-hover:translate-x-2 group-hover:translate-y-2 transition-all duration-500"></div>
+                <img src="https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?q=80&w=2070&auto=format&fit=crop" alt="Spa Detail" class="relative z-10 w-full h-[500px] object-cover filter grayscale hover:grayscale-0 transition-all duration-700" />
+            </div>
+            
+            <div>
+                <p class="text-xs text-primary-gold uppercase tracking-[0.4em] font-bold mb-4">The Velvet Touch Philosophy</p>
+                <h2 class="font-cinzel text-4xl md:text-5xl text-white mb-8 leading-tight">A Sanctuary For <br/><span class="text-gradient">The Elite</span></h2>
+                <p class="text-champagne/60 text-sm leading-relaxed mb-6 font-light">
+                    We understand that true luxury lies in absolute discretion and unparalleled service. Velvet Touch was established for distinguished gentlemen and couples who seek an escape from the ordinary.
+                </p>
+                <p class="text-champagne/60 text-sm leading-relaxed mb-8 font-light">
+                    Every detail of our private suites is meticulously crafted to ensure your comfort. Our carefully selected therapists are not just experts in massage; they are muses dedicated to awakening your senses and fulfilling your unspoken desires.
+                </p>
+                
+                <div class="grid grid-cols-2 gap-6">
+                    <div class="flex items-start gap-3">
+                        <span class="material-symbols-outlined text-primary-gold mt-1">verified_user</span>
+                        <div>
+                            <h4 class="text-white font-serif text-lg">100% Discrete</h4>
+                            <p class="text-xs text-champagne/50 mt-1">Your privacy is our highest priority.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <span class="material-symbols-outlined text-primary-gold mt-1">diamond</span>
+                        <div>
+                            <h4 class="text-white font-serif text-lg">VIP Suites</h4>
+                            <p class="text-xs text-champagne/50 mt-1">Luxury rooms with private showers.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- VIP Girls / Therapists Gallery Section (ENHANCED) -->
+    <section id="gallery" class="py-24 px-4 md:px-10 bg-dark-surface relative border-y border-white/5">
+        <!-- Decorative elements -->
+        <div class="absolute top-0 left-0 w-full h-full bg-[url('https://www.transparenttextures.com/patterns/stardust.png')] opacity-10 pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto mb-16 text-center relative z-10">
+            <div class="flex justify-center items-center gap-3 mb-4">
+                <span class="h-[1px] w-8 bg-primary-gold/50"></span>
+                <p class="text-xs text-primary-gold uppercase tracking-[0.4em] font-bold">Premium Selection</p>
+                <span class="h-[1px] w-8 bg-primary-gold/50"></span>
+            </div>
+            <h2 class="font-cinzel text-5xl md:text-6xl text-white">Our <span class="text-gradient font-serif italic">Elite Muses</span></h2>
+            <p class="text-champagne/60 mt-6 max-w-2xl mx-auto font-light text-sm">
+                Scroll to explore our exclusive VIP models. Each brings a unique touch of passion, elegance, and healing hands to your private session.
+            </p>
+        </div>
+
+        <!-- Horizontal Scroll Container -->
+        <div class="flex overflow-x-auto gap-8 pb-12 snap-x custom-scroll px-4 md:px-10 relative z-10" style="scroll-behavior: smooth;">
+            
+            <!-- Gallery Cards -->
+            <div class="min-w-[280px] w-[280px] md:min-w-[320px] md:w-[320px] snap-center group cursor-pointer openChatBtn" title="Request Booking">
+                <div class="golden-frame aspect-[9/16] relative bg-[#0a0a0a]">
+                    <img src="https://i.ibb.co/jk2dP0qb/IMG-20260419-145754.jpg" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 opacity-90 group-hover:opacity-100" alt="Aisha">
+                    <div class="absolute inset-0 img-fade-overlay transition-opacity duration-500"></div>
+                    
+                    <div class="absolute top-4 right-4 bg-black/60 backdrop-blur-md px-3 py-1 rounded-full border border-primary-gold/30 flex items-center gap-2 z-20">
+                        <span class="status-dot"></span>
+                        <span class="text-[10px] uppercase tracking-widest text-white font-semibold">Available</span>
+                    </div>
+
+                    <div class="absolute bottom-0 w-full p-8 z-20 transform translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
+                        <div class="flex justify-between items-end mb-2">
+                            <h3 class="text-primary-gold font-cinzel text-3xl font-bold text-glow">Aisha</h3>
+                            <span class="text-white/50 text-xs font-mono">22 YRS</span>
+                        </div>
+                        <p class="text-white/80 text-sm font-light tracking-wide mb-4">Sensual Specialist</p>
+                        <div class="w-full h-[1px] bg-primary-gold/30 mb-4"></div>
+                        <p class="text-[10px] text-champagne/60 uppercase tracking-widest text-center group-hover:text-primary-gold transition-colors">Tap to Request</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="min-w-[280px] w-[280px] md:min-w-[320px] md:w-[320px] snap-center group cursor-pointer openChatBtn">
+                <div class="golden-frame aspect-[9/16] relative bg-[#0a0a0a]">
+                    <img src="https://i.ibb.co/TBfJxXwb/IMG-20260325-WA0032.jpg" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 opacity-90 group-hover:opacity-100" alt="Priya">
+                    <div class="absolute inset-0 img-fade-overlay transition-opacity duration-500"></div>
+                    <div class="absolute top-4 right-4 bg-black/60 backdrop-blur-md px-3 py-1 rounded-full border border-primary-gold/30 flex items-center gap-2 z-20">
+                        <span class="status-dot"></span>
+                        <span class="text-[10px] uppercase tracking-widest text-white font-semibold">Available</span>
+                    </div>
+                    <div class="absolute bottom-0 w-full p-8 z-20 transform translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
+                        <div class="flex justify-between items-end mb-2">
+                            <h3 class="text-primary-gold font-cinzel text-3xl font-bold text-glow">Priya</h3>
+                            <span class="text-white/50 text-xs font-mono">24 YRS</span>
+                        </div>
+                        <p class="text-white/80 text-sm font-light tracking-wide mb-4">Deep Tissue Muse</p>
+                        <div class="w-full h-[1px] bg-primary-gold/30 mb-4"></div>
+                        <p class="text-[10px] text-champagne/60 uppercase tracking-widest text-center group-hover:text-primary-gold transition-colors">Tap to Request</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="min-w-[280px] w-[280px] md:min-w-[320px] md:w-[320px] snap-center group cursor-pointer openChatBtn">
+                <div class="golden-frame aspect-[9/16] relative bg-[#0a0a0a]">
+                    <img src="https://i.ibb.co/hRtsvwpf/IMG-20260417-WA0041.jpg" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 opacity-90 group-hover:opacity-100" alt="Neha">
+                    <div class="absolute inset-0 img-fade-overlay transition-opacity duration-500"></div>
+                    <div class="absolute bottom-0 w-full p-8 z-20 transform translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
+                        <div class="flex justify-between items-end mb-2">
+                            <h3 class="text-primary-gold font-cinzel text-3xl font-bold text-glow">Neha</h3>
+                            <span class="text-white/50 text-xs font-mono">21 YRS</span>
+                        </div>
+                        <p class="text-white/80 text-sm font-light tracking-wide mb-4">Aroma Goddess</p>
+                        <div class="w-full h-[1px] bg-primary-gold/30 mb-4"></div>
+                        <p class="text-[10px] text-champagne/60 uppercase tracking-widest text-center group-hover:text-primary-gold transition-colors">Tap to Request</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="min-w-[280px] w-[280px] md:min-w-[320px] md:w-[320px] snap-center group cursor-pointer openChatBtn">
+                <div class="golden-frame aspect-[9/16] relative bg-[#0a0a0a]">
+                    <img src="https://i.ibb.co/fGk4Hy5h/IMG-20260410-WA0051.jpg" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 opacity-90 group-hover:opacity-100" alt="Riya">
+                    <div class="absolute inset-0 img-fade-overlay transition-opacity duration-500"></div>
+                    <div class="absolute top-4 right-4 bg-black/60 backdrop-blur-md px-3 py-1 rounded-full border border-primary-gold/30 flex items-center gap-2 z-20">
+                        <span class="status-dot"></span>
+                        <span class="text-[10px] uppercase tracking-widest text-white font-semibold">Available</span>
+                    </div>
+                    <div class="absolute bottom-0 w-full p-8 z-20 transform translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
+                        <div class="flex justify-between items-end mb-2">
+                            <h3 class="text-primary-gold font-cinzel text-3xl font-bold text-glow">Riya</h3>
+                            <span class="text-white/50 text-xs font-mono">23 YRS</span>
+                        </div>
+                        <p class="text-white/80 text-sm font-light tracking-wide mb-4">Touch Expert</p>
+                        <div class="w-full h-[1px] bg-primary-gold/30 mb-4"></div>
+                        <p class="text-[10px] text-champagne/60 uppercase tracking-widest text-center group-hover:text-primary-gold transition-colors">Tap to Request</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="min-w-[280px] w-[280px] md:min-w-[320px] md:w-[320px] snap-center group cursor-pointer openChatBtn">
+                <div class="golden-frame aspect-[9/16] relative bg-[#0a0a0a]">
+                    <img src="https://i.ibb.co/DgK4fsqg/IMG-20260301-WA0012.jpg" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 opacity-90 group-hover:opacity-100" alt="Sonia">
+                    <div class="absolute inset-0 img-fade-overlay transition-opacity duration-500"></div>
+                    <div class="absolute bottom-0 w-full p-8 z-20 transform translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
+                        <div class="flex justify-between items-end mb-2">
+                            <h3 class="text-primary-gold font-cinzel text-3xl font-bold text-glow">Sonia</h3>
+                            <span class="text-white/50 text-xs font-mono">25 YRS</span>
+                        </div>
+                        <p class="text-white/80 text-sm font-light tracking-wide mb-4">Royal Therapist</p>
+                        <div class="w-full h-[1px] bg-primary-gold/30 mb-4"></div>
+                        <p class="text-[10px] text-champagne/60 uppercase tracking-widest text-center group-hover:text-primary-gold transition-colors">Tap to Request</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="min-w-[280px] w-[280px] md:min-w-[320px] md:w-[320px] snap-center group cursor-pointer openChatBtn">
+                <div class="golden-frame aspect-[9/16] relative bg-[#0a0a0a]">
+                    <img src="https://i.ibb.co/RpfDhKbr/IMG-20260407-WA0024.jpg" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 opacity-90 group-hover:opacity-100" alt="Kavya">
+                    <div class="absolute inset-0 img-fade-overlay transition-opacity duration-500"></div>
+                    <div class="absolute top-4 right-4 bg-black/60 backdrop-blur-md px-3 py-1 rounded-full border border-primary-gold/30 flex items-center gap-2 z-20">
+                        <span class="status-dot"></span>
+                        <span class="text-[10px] uppercase tracking-widest text-white font-semibold">Available</span>
+                    </div>
+                    <div class="absolute bottom-0 w-full p-8 z-20 transform translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
+                        <div class="flex justify-between items-end mb-2">
+                            <h3 class="text-primary-gold font-cinzel text-3xl font-bold text-glow">Kavya</h3>
+                            <span class="text-white/50 text-xs font-mono">22 YRS</span>
+                        </div>
+                        <p class="text-white/80 text-sm font-light tracking-wide mb-4">Passion Healer</p>
+                        <div class="w-full h-[1px] bg-primary-gold/30 mb-4"></div>
+                        <p class="text-[10px] text-champagne/60 uppercase tracking-widest text-center group-hover:text-primary-gold transition-colors">Tap to Request</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="min-w-[280px] w-[280px] md:min-w-[320px] md:w-[320px] snap-center group cursor-pointer openChatBtn">
+                <div class="golden-frame aspect-[9/16] relative bg-[#0a0a0a]">
+                    <img src="https://i.ibb.co/N2kH4JDH/Screenshot-20260327-150457.jpg" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 opacity-90 group-hover:opacity-100" alt="Ananya">
+                    <div class="absolute inset-0 img-fade-overlay transition-opacity duration-500"></div>
+                    <div class="absolute bottom-0 w-full p-8 z-20 transform translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
+                        <div class="flex justify-between items-end mb-2">
+                            <h3 class="text-primary-gold font-cinzel text-3xl font-bold text-glow">Ananya</h3>
+                            <span class="text-white/50 text-xs font-mono">24 YRS</span>
+                        </div>
+                        <p class="text-white/80 text-sm font-light tracking-wide mb-4">Relaxation Queen</p>
+                        <div class="w-full h-[1px] bg-primary-gold/30 mb-4"></div>
+                        <p class="text-[10px] text-champagne/60 uppercase tracking-widest text-center group-hover:text-primary-gold transition-colors">Tap to Request</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="min-w-[280px] w-[280px] md:min-w-[320px] md:w-[320px] snap-center group cursor-pointer openChatBtn">
+                <div class="golden-frame aspect-[9/16] relative bg-[#0a0a0a]">
+                    <img src="https://i.ibb.co/kVm59pLR/IMG-20260302-135557.jpg" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 opacity-90 group-hover:opacity-100" alt="Meera">
+                    <div class="absolute inset-0 img-fade-overlay transition-opacity duration-500"></div>
+                    <div class="absolute top-4 right-4 bg-black/60 backdrop-blur-md px-3 py-1 rounded-full border border-primary-gold/30 flex items-center gap-2 z-20">
+                        <span class="status-dot"></span>
+                        <span class="text-[10px] uppercase tracking-widest text-white font-semibold">Available</span>
+                    </div>
+                    <div class="absolute bottom-0 w-full p-8 z-20 transform translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
+                        <div class="flex justify-between items-end mb-2">
+                            <h3 class="text-primary-gold font-cinzel text-3xl font-bold text-glow">Meera</h3>
+                            <span class="text-white/50 text-xs font-mono">20 YRS</span>
+                        </div>
+                        <p class="text-white/80 text-sm font-light tracking-wide mb-4">Velvet Touch</p>
+                        <div class="w-full h-[1px] bg-primary-gold/30 mb-4"></div>
+                        <p class="text-[10px] text-champagne/60 uppercase tracking-widest text-center group-hover:text-primary-gold transition-colors">Tap to Request</p>
+                    </div>
+                </div>
+            </div>
+
+             <div class="min-w-[280px] w-[280px] md:min-w-[320px] md:w-[320px] snap-center group cursor-pointer openChatBtn">
+                <div class="golden-frame aspect-[9/16] relative bg-[#0a0a0a]">
+                    <img src="https://i.ibb.co/wZpvw8xL/IMG-20260117-WA0023.jpg" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 opacity-90 group-hover:opacity-100" alt="Nisha">
+                    <div class="absolute inset-0 img-fade-overlay transition-opacity duration-500"></div>
+                    <div class="absolute bottom-0 w-full p-8 z-20 transform translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
+                        <div class="flex justify-between items-end mb-2">
+                            <h3 class="text-primary-gold font-cinzel text-3xl font-bold text-glow">Nisha</h3>
+                            <span class="text-white/50 text-xs font-mono">26 YRS</span>
+                        </div>
+                        <p class="text-white/80 text-sm font-light tracking-wide mb-4">Elite Companion</p>
+                        <div class="w-full h-[1px] bg-primary-gold/30 mb-4"></div>
+                        <p class="text-[10px] text-champagne/60 uppercase tracking-widest text-center group-hover:text-primary-gold transition-colors">Tap to Request</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="min-w-[280px] w-[280px] md:min-w-[320px] md:w-[320px] snap-center group cursor-pointer openChatBtn">
+                <div class="golden-frame aspect-[9/16] relative bg-[#0a0a0a]">
+                    <img src="https://i.ibb.co/pjf6vZJL/IMG-20251111-WA0076.jpg" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 opacity-90 group-hover:opacity-100" alt="Simran">
+                    <div class="absolute inset-0 img-fade-overlay transition-opacity duration-500"></div>
+                    <div class="absolute bottom-0 w-full p-8 z-20 transform translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
+                        <div class="flex justify-between items-end mb-2">
+                            <h3 class="text-primary-gold font-cinzel text-3xl font-bold text-glow">Simran</h3>
+                            <span class="text-white/50 text-xs font-mono">23 YRS</span>
+                        </div>
+                        <p class="text-white/80 text-sm font-light tracking-wide mb-4">Master Therapist</p>
+                        <div class="w-full h-[1px] bg-primary-gold/30 mb-4"></div>
+                        <p class="text-[10px] text-champagne/60 uppercase tracking-widest text-center group-hover:text-primary-gold transition-colors">Tap to Request</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- How It Works Section (NEW) -->
+    <section class="py-20 px-6 bg-dark-bg bg-[url('https://www.transparenttextures.com/patterns/diagmonds-light.png')]">
+        <div class="max-w-5xl mx-auto text-center">
+            <h2 class="font-cinzel text-3xl md:text-4xl text-white mb-12">The <span class="text-primary-gold">Booking</span> Process</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10 relative">
+                <!-- Connecting Line for Desktop -->
+                <div class="hidden md:block absolute top-10 left-[15%] w-[70%] h-[1px] border-t border-dashed border-primary-gold/40 z-0"></div>
+
+                <div class="flex flex-col items-center relative z-10 group">
+                    <div class="w-20 h-20 rounded-full bg-dark-surface border border-primary-gold flex items-center justify-center mb-6 group-hover:bg-primary-gold transition-colors duration-500 shadow-[0_0_20px_rgba(212,175,55,0.2)]">
+                        <span class="material-symbols-outlined text-3xl text-primary-gold group-hover:text-black">how_to_reg</span>
+                    </div>
+                    <h3 class="font-serif text-xl text-white mb-2">1. Verification</h3>
+                    <p class="text-xs text-champagne/60 px-4">Register securely with our VIP Concierge to ensure a safe, elite environment.</p>
+                </div>
+                
+                <div class="flex flex-col items-center relative z-10 group">
+                    <div class="w-20 h-20 rounded-full bg-dark-surface border border-primary-gold flex items-center justify-center mb-6 group-hover:bg-primary-gold transition-colors duration-500 shadow-[0_0_20px_rgba(212,175,55,0.2)]">
+                        <span class="material-symbols-outlined text-3xl text-primary-gold group-hover:text-black">chat</span>
+                    </div>
+                    <h3 class="font-serif text-xl text-white mb-2">2. Consultation</h3>
+                    <p class="text-xs text-champagne/60 px-4">Chat live with our manager. Customize your therapy, select your muse, and set the mood.</p>
+                </div>
+
+                <div class="flex flex-col items-center relative z-10 group">
+                    <div class="w-20 h-20 rounded-full bg-dark-surface border border-primary-gold flex items-center justify-center mb-6 group-hover:bg-primary-gold transition-colors duration-500 shadow-[0_0_20px_rgba(212,175,55,0.2)]">
+                        <span class="material-symbols-outlined text-3xl text-primary-gold group-hover:text-black">local_hotel</span>
+                    </div>
+                    <h3 class="font-serif text-xl text-white mb-2">3. The Experience</h3>
+                    <p class="text-xs text-champagne/60 px-4">Arrive at our discreet location and surrender yourself to absolute bliss.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expanded Services Section -->
+    <section class="py-24 px-6 bg-dark-surface border-t border-white/5" id="services">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-20 space-y-4">
+                <p class="text-xs text-primary-gold uppercase tracking-[0.4em] font-bold">Curated For You</p>
+                <h2 class="font-cinzel text-5xl md:text-6xl text-white">Exclusive <span class="text-gradient font-serif italic">Rituals</span></h2>
+                <p class="text-champagne/60 max-w-2xl mx-auto text-sm font-light">Indulge in our carefully curated experiences designed to stimulate the mind, relax the body, and awaken the soul.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="glass-panel p-10 rounded-lg flex flex-col gap-6 group cursor-pointer openChatBtn">
+                    <div class="flex justify-between items-start">
+                        <div class="w-14 h-14 rounded-full bg-black/50 flex items-center justify-center border border-primary-gold/30 group-hover:bg-primary-gold group-hover:border-primary-gold transition-all duration-500">
+                            <span class="material-symbols-outlined text-2xl text-primary-gold group-hover:text-black">spa</span>
+                        </div>
+                        <span class="text-white/20 font-cinzel text-4xl group-hover:text-primary-gold/20 transition-colors">01</span>
+                    </div>
+                    <div>
+                        <h3 class="font-serif text-2xl text-white mb-3 group-hover:text-primary-gold transition-colors">Sensual Swedish</h3>
+                        <p class="text-champagne/60 text-sm leading-relaxed mb-6 font-light">A smooth, flowing massage using warm, scented aphrodisiac oils. Designed to melt away tension through long, intimate, skin-to-skin strokes.</p>
+                        <div class="flex justify-between items-center border-t border-white/10 pt-4">
+                            <span class="text-white/40 text-xs">Duration</span>
+                            <span class="text-primary-gold text-xs uppercase tracking-widest font-bold">60 / 90 Min</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="glass-panel p-10 rounded-lg flex flex-col gap-6 group cursor-pointer openChatBtn">
+                    <div class="flex justify-between items-start">
+                        <div class="w-14 h-14 rounded-full bg-black/50 flex items-center justify-center border border-primary-gold/30 group-hover:bg-primary-gold group-hover:border-primary-gold transition-all duration-500">
+                            <span class="material-symbols-outlined text-2xl text-primary-gold group-hover:text-black">local_fire_department</span>
+                        </div>
+                        <span class="text-white/20 font-cinzel text-4xl group-hover:text-primary-gold/20 transition-colors">02</span>
+                    </div>
+                    <div>
+                        <h3 class="font-serif text-2xl text-white mb-3 group-hover:text-primary-gold transition-colors">Deep Tissue Passion</h3>
+                        <p class="text-champagne/60 text-sm leading-relaxed mb-6 font-light">Firm pressure targeting deep muscle layers combined with a highly sensual touch. Intense, relieving, and deeply satisfying for body aches.</p>
+                        <div class="flex justify-between items-center border-t border-white/10 pt-4">
+                            <span class="text-white/40 text-xs">Duration</span>
+                            <span class="text-primary-gold text-xs uppercase tracking-widest font-bold">60 / 90 Min</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="glass-panel p-10 rounded-lg flex flex-col gap-6 group cursor-pointer openChatBtn">
+                    <div class="flex justify-between items-start">
+                        <div class="w-14 h-14 rounded-full bg-black/50 flex items-center justify-center border border-primary-gold/30 group-hover:bg-primary-gold group-hover:border-primary-gold transition-all duration-500">
+                            <span class="material-symbols-outlined text-2xl text-primary-gold group-hover:text-black">diversity_2</span>
+                        </div>
+                        <span class="text-white/20 font-cinzel text-4xl group-hover:text-primary-gold/20 transition-colors">03</span>
+                    </div>
+                    <div>
+                        <h3 class="font-serif text-2xl text-white mb-3 group-hover:text-primary-gold transition-colors">Tantric Awakening</h3>
+                        <p class="text-champagne/60 text-sm leading-relaxed mb-6 font-light">An ancient energy practice. Slow, highly arousing bodywork that focuses on breath, prolonged pleasure, and spiritual connection.</p>
+                        <div class="flex justify-between items-center border-t border-white/10 pt-4">
+                            <span class="text-white/40 text-xs">Duration</span>
+                            <span class="text-primary-gold text-xs uppercase tracking-widest font-bold">90 Min</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="glass-panel p-10 rounded-lg flex flex-col gap-6 group cursor-pointer openChatBtn">
+                    <div class="flex justify-between items-start">
+                        <div class="w-14 h-14 rounded-full bg-black/50 flex items-center justify-center border border-primary-gold/30 group-hover:bg-primary-gold group-hover:border-primary-gold transition-all duration-500">
+                            <span class="material-symbols-outlined text-2xl text-primary-gold group-hover:text-black">waves</span>
+                        </div>
+                        <span class="text-white/20 font-cinzel text-4xl group-hover:text-primary-gold/20 transition-colors">04</span>
+                    </div>
+                    <div>
+                        <h3 class="font-serif text-2xl text-white mb-3 group-hover:text-primary-gold transition-colors">Signature Nuru Slider</h3>
+                        <p class="text-champagne/60 text-sm leading-relaxed mb-6 font-light">The ultimate VIP fantasy. Your therapist uses a warm, slippery Nuru gel, sliding their entire body over yours for a frictionless, mind-blowing glide.</p>
+                        <div class="flex justify-between items-center border-t border-white/10 pt-4">
+                            <span class="text-white/40 text-xs">Duration</span>
+                            <span class="text-primary-gold text-xs uppercase tracking-widest font-bold">60 / 90 Min</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="glass-panel p-10 rounded-lg flex flex-col gap-6 group cursor-pointer openChatBtn">
+                    <div class="flex justify-between items-start">
+                        <div class="w-14 h-14 rounded-full bg-black/50 flex items-center justify-center border border-primary-gold/30 group-hover:bg-primary-gold group-hover:border-primary-gold transition-all duration-500">
+                            <span class="material-symbols-outlined text-2xl text-primary-gold group-hover:text-black">favorite</span>
+                        </div>
+                        <span class="text-white/20 font-cinzel text-4xl group-hover:text-primary-gold/20 transition-colors">05</span>
+                    </div>
+                    <div>
+                        <h3 class="font-serif text-2xl text-white mb-3 group-hover:text-primary-gold transition-colors">Couple's Romance</h3>
+                        <p class="text-champagne/60 text-sm leading-relaxed mb-6 font-light">Share the ecstasy. Side-by-side synchronized massages in our ultra-luxurious private suite with complimentary champagne and strawberries.</p>
+                        <div class="flex justify-between items-center border-t border-white/10 pt-4">
+                            <span class="text-white/40 text-xs">Duration</span>
+                            <span class="text-primary-gold text-xs uppercase tracking-widest font-bold">90 / 120 Min</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="glass-panel p-10 rounded-lg flex flex-col gap-6 group cursor-pointer openChatBtn">
+                    <div class="flex justify-between items-start">
+                        <div class="w-14 h-14 rounded-full bg-black/50 flex items-center justify-center border border-primary-gold/30 group-hover:bg-primary-gold group-hover:border-primary-gold transition-all duration-500">
+                            <span class="material-symbols-outlined text-2xl text-primary-gold group-hover:text-black">diamond</span>
+                        </div>
+                        <span class="text-white/20 font-cinzel text-4xl group-hover:text-primary-gold/20 transition-colors">06</span>
+                    </div>
+                    <div>
+                        <h3 class="font-serif text-2xl text-white mb-3 group-hover:text-primary-gold transition-colors">Four Hands Royal</h3>
+                        <p class="text-champagne/60 text-sm leading-relaxed mb-6 font-light">Fit for a king. Two elite therapists working in perfect harmony across your body, creating a sensory overload that defies description.</p>
+                        <div class="flex justify-between items-center border-t border-white/10 pt-4">
+                            <span class="text-white/40 text-xs">Duration</span>
+                            <span class="text-primary-gold text-xs uppercase tracking-widest font-bold">60 / 90 Min</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Footer -->
+    <footer class="bg-dark-bg w-full border-t border-primary-gold/20 pt-16 pb-8 px-8 relative" id="contact">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 mb-12">
+            <!-- Brand -->
+            <div>
+                <div class="text-3xl font-cinzel text-white text-glow mb-4">
+                    VELVET <span class="text-primary-gold">TOUCH</span>
+                </div>
+                <p class="text-champagne/50 text-xs leading-loose max-w-sm">
+                    The premier destination for elite gentlemen and couples seeking discreet, high-end companionship and sensual bodywork therapies. Experience the touch of perfection.
+                </p>
+            </div>
+            
+            <!-- Quick Links -->
+            <div class="md:justify-self-center">
+                <h4 class="text-primary-gold font-serif text-lg mb-4">Explore</h4>
+                <ul class="space-y-2 text-xs text-champagne/60 uppercase tracking-widest">
+                    <li><a href="#about" class="hover:text-white transition-colors">The Philosophy</a></li>
+                    <li><a href="#gallery" class="hover:text-white transition-colors">VIP Muses</a></li>
+                    <li><a href="#services" class="hover:text-white transition-colors">Rituals</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors openChatBtn">Concierge Support</a></li>
+                </ul>
+            </div>
+            
+            <!-- Secure -->
+            <div class="md:justify-self-end">
+                <h4 class="text-primary-gold font-serif text-lg mb-4">Strictly Confidential</h4>
+                <p class="text-champagne/50 text-xs leading-loose max-w-xs mb-4">
+                    All bookings and communications are 100% secure and private. Discretion is our guarantee.
+                </p>
+                <div class="flex gap-4 opacity-50">
+                    <span class="material-symbols-outlined text-3xl">lock</span>
+                    <span class="material-symbols-outlined text-3xl">verified</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="border-t border-white/10 pt-8 flex flex-col items-center">
+            <p class="font-sans font-semibold tracking-[0.3em] text-[10px] uppercase text-primary-gold text-center opacity-70">
+                © 2024 VELVET TOUCH VIP SPA. ALL RIGHTS RESERVED.
+            </p>
+            <p class="text-[8px] text-white/30 mt-2 uppercase tracking-widest">18+ strictly enforced. Discretion guaranteed.</p>
+        </div>
+    </footer>
+
+
+    <!-- ============================================== -->
+    <!-- OVERLAYS & FUNCTIONALITY (FIREBASE + LOGIC) -->
+    <!-- DO NOT TOUCH OR ALTER THIS SECTION AT ALL -->
+    <!-- ============================================== -->
+
+    <!-- Registration Modal -->
+    <div class="modal-overlay" id="registerModal">
+        <div class="bg-[#050001] p-10 rounded-xl border border-[#D4AF37] w-11/12 max-w-md text-center shadow-[0_0_50px_rgba(212,175,55,0.15)] relative overflow-hidden">
+            <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-[#D4AF37] to-transparent"></div>
+            <span class="material-symbols-outlined text-4xl text-[#D4AF37] mb-2">vpn_key</span>
+            <h2 class="font-cinzel text-3xl text-white mb-2">Elite <span class="text-[#D4AF37]">Access</span></h2>
+            <p class="text-champagne/50 text-xs mb-8 leading-relaxed">To ensure exclusivity and discretion, please verify your identity to access our private concierge.</p>
+            
+            <div class="space-y-4">
+                <input type="text" id="regName" placeholder="Alias or First Name" class="w-full p-4 bg-[#0a0a0a] border border-white/10 rounded-md text-white text-sm outline-none focus:border-[#D4AF37] focus:shadow-[0_0_10px_rgba(212,175,55,0.2)] transition-all placeholder-white/30" required>
+                <input type="tel" id="regPhone" placeholder="WhatsApp Number" class="w-full p-4 bg-[#0a0a0a] border border-white/10 rounded-md text-white text-sm outline-none focus:border-[#D4AF37] focus:shadow-[0_0_10px_rgba(212,175,55,0.2)] transition-all placeholder-white/30" required>
+            </div>
+            
+            <button id="registerSubmitBtn" class="w-full py-4 mt-8 btn-gold text-black font-bold text-xs uppercase tracking-[0.2em] rounded-md">Enter Sanctuary</button>
+            <p class="text-[9px] text-white/30 mt-4 uppercase tracking-widest"><span class="material-symbols-outlined text-[10px] align-middle">lock</span> 256-bit encrypted secure entry</p>
+        </div>
+    </div>
+
+    <!-- Client Chat Box -->
+    <div class="chat-container" id="clientChat">
+        <div class="chat-header">
+            <div class="flex items-center gap-3">
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=100&auto=format&fit=crop" class="w-10 h-10 rounded-full border border-[#D4AF37] object-cover" alt="Manager">
+                    <div class="absolute bottom-0 right-0 w-3 h-3 bg-green-500 border-2 border-[#050001] rounded-full"></div>
+                </div>
+                <div>
+                    <h3 class="font-serif text-lg tracking-wider m-0 text-white">VIP Concierge</h3>
+                    <p class="text-[10px] text-[#D4AF37] m-0 tracking-widest uppercase">Online & Ready</p>
+                </div>
+            </div>
+            <span class="cursor-pointer text-3xl text-white/50 hover:text-white transition-colors" id="closeClientChat">×</span>
+        </div>
+        
+        <!-- Video Call Alert Area (Hidden by default) -->
+        <div id="clientVideoAlert" class="hidden text-black p-4 text-center cursor-pointer hover:opacity-90 transition-all">
+            <span class="material-symbols-outlined align-middle mr-2 animate-pulse text-2xl">videocam</span>
+            <strong class="align-middle tracking-wider font-serif">Manager is Video Calling! Click to Join</strong>
+        </div>
+
+        <div class="chat-messages custom-scroll" id="clientChatMessages"></div>
+        <div id="loader" class="hidden text-[#D4AF37] text-xs text-center py-2 bg-black/50 backdrop-blur">Securely Uploading...</div>
+        
+        <div class="chat-input">
+            <input type="file" id="imageInput" accept="image/*" class="hidden">
+            <button id="attachBtn" title="Send Image"><span class="material-symbols-outlined">attach_file</span></button>
+            <input type="text" id="clientMsgInput" placeholder="Type your discrete message...">
+            <button id="clientSendBtn"><span class="material-symbols-outlined">send</span></button>
+        </div>
+    </div>
+
+    <!-- Secret Admin Button -->
+    <div class="secret-btn" id="secretAdminBtn"></div>
+
+    <!-- Admin Panel -->
+    <div class="admin-panel" id="adminPanel">
+        <div class="user-list custom-scroll">
+            <div class="p-5 bg-[#050001] border-b border-[#D4AF37]/30 flex justify-between items-center sticky top-0 z-10">
+                <h3 class="font-cinzel text-xl text-[#D4AF37] m-0">Master Console</h3>
+                <button id="closeAdminBtn" class="bg-red-900/50 hover:bg-red-900 text-white px-3 py-1 text-xs rounded border border-red-500/50 transition-colors uppercase tracking-widest">Exit</button>
+            </div>
+            <div id="adminUserList" class="h-[calc(100vh-70px)]"></div>
+        </div>
+        <div class="admin-chat-area">
+            <div class="p-5 bg-[#050001] border-b border-[#D4AF37]/20 flex justify-between items-center shadow-lg z-10">
+                <h3 id="adminChatHeader" class="font-serif text-2xl m-0 text-white">Select a VIP Client</h3>
+                <!-- Admin Video Call Action -->
+                <button id="adminStartVideoBtn" class="hidden btn-gold text-black px-6 py-2 text-sm uppercase tracking-widest font-bold rounded shadow-lg transition-all flex items-center gap-2">
+                    <span class="material-symbols-outlined">videocam</span> Start Video Call
+                </button>
+            </div>
+            <div class="chat-messages custom-scroll" id="adminChatMessages"></div>
+            <div id="adminLoader" class="hidden text-[#D4AF37] text-xs text-center py-2 bg-black/50">Uploading Image...</div>
+            <div class="chat-input pb-6 pt-4 px-6 border-t border-[#333] bg-[#050001]">
+                <input type="file" id="adminImageInput" accept="image/*" class="hidden">
+                <button id="adminAttachBtn" class="bg-[#1a1a1a] p-3 rounded-full hover:bg-[#333]"><span class="material-symbols-outlined">attach_file</span></button>
+                <input type="text" id="adminMsgInput" placeholder="Type reply or send payment QR..." disabled class="text-base py-3">
+                <button id="adminSendBtn" disabled class="w-12 h-12"><span class="material-symbols-outlined">send</span></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts (Strictly Kept As Original to Prevent Any Breakage) -->
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js";
+        import { getDatabase, ref, set, push, onValue, serverTimestamp, remove } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-database.js";
+
+        // FIREBASE CONFIG (Kept exactly as requested)
+        const firebaseConfig = {
+            apiKey: "AIzaSyDokia-G7qUs5OkQjrwA5xxdm7ShLjJi00",
+            authDomain: "spark-1d33a.firebaseapp.com",
+            databaseURL: "https://spark-1d33a-default-rtdb.firebaseio.com",
+            projectId: "spark-1d33a",
+            storageBucket: "spark-1d33a.firebasestorage.app",
+            messagingSenderId: "798491973363",
+            appId: "1:798491973363:web:07250fb5c14043b95bc986",
+            measurementId: "G-RNT5GHRVP1"
+        };
+
+        const app = initializeApp(firebaseConfig);
+        const db = getDatabase(app);
+        const IMGBB_API_KEY = "05536113a405563d7697475325a95f43";
+
+        let currentUser = { id: localStorage.getItem('vt_userid'), name: localStorage.getItem('vt_name'), phone: localStorage.getItem('vt_phone') };
+        let activeAdminChatUserId = null;
+        let activeVideoRoom = null;
+
+        // --- User Registration Logic ---
+        window.onload = () => {
+            if (!currentUser.id) {
+                document.getElementById('registerModal').style.display = 'flex';
+                document.body.style.overflow = 'hidden';
+            } else {
+                listenForVideoCall(currentUser.id);
+            }
+        };
+
+        document.getElementById('registerSubmitBtn').addEventListener('click', () => {
+            const name = document.getElementById('regName').value.trim();
+            const phone = document.getElementById('regPhone').value.trim();
+            
+            if(name && phone) {
+                const newUserId = 'user_' + Date.now();
+                currentUser = { id: newUserId, name: name, phone: phone };
+                
+                localStorage.setItem('vt_userid', newUserId);
+                localStorage.setItem('vt_name', name);
+                localStorage.setItem('vt_phone', phone);
+                
+                set(ref(db, 'users/' + newUserId), { name: name, phone: phone, joinedAt: serverTimestamp() })
+                .then(() => {
+                    document.getElementById('registerModal').style.display = 'none';
+                    document.body.style.overflow = 'auto';
+                    listenForVideoCall(newUserId);
+                }).catch(e => alert("DB Error! Change Firebase Rules to read/write true."));
+            } else {
+                alert('Both fields are required for VIP Access.');
+            }
+        });
+
+        // --- UI Interactions ---
+        document.querySelectorAll('.openChatBtn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                if(!currentUser.id) return alert("Verify identity first.");
+                document.getElementById('clientChat').style.display = 'flex';
+                loadClientChat();
+            });
+        });
+        document.getElementById('closeClientChat').addEventListener('click', () => document.getElementById('clientChat').style.display = 'none');
+
+        // --- ImgBB Logic ---
+        async function uploadImageToImgBB(file, loaderId) {
+            document.getElementById(loaderId).style.display = 'block';
+            const formData = new FormData();
+            formData.append('image', file);
+            try {
+                const res = await fetch(`https://api.imgbb.com/1/upload?key=${IMGBB_API_KEY}`, { method: 'POST', body: formData });
+                const data = await res.json();
+                document.getElementById(loaderId).style.display = 'none';
+                return data.success ? data.data.url : null;
+            } catch (err) {
+                document.getElementById(loaderId).style.display = 'none';
+                return null;
+            }
+        }
+
+        function formatTime(ts) {
+            if(!ts) return "";
+            const d = new Date(ts);
+            return d.getHours() + ':' + (d.getMinutes()<10?'0':'') + d.getMinutes();
+        }
+
+        // --- Client Chat Logic ---
+        function loadClientChat() {
+            onValue(ref(db, 'chats/' + currentUser.id), (snapshot) => {
+                const box = document.getElementById('clientChatMessages');
+                box.innerHTML = '';
+                const data = snapshot.val();
+                if(data) {
+                    Object.values(data).forEach(msg => {
+                        const isUser = msg.sender === 'user';
+                        let html = `<div class="message ${isUser ? 'msg-user' : 'msg-admin'}">`;
+                        if(msg.text) html += `<div>${msg.text}</div>`;
+                        if(msg.imageUrl) html += `<img src="${msg.imageUrl}">`;
+                        html += `<div style="font-size:9px; text-align:right; margin-top:4px; opacity:0.7">${formatTime(msg.timestamp)}</div></div>`;
+                        box.innerHTML += html;
+                    });
+                    box.scrollTop = box.scrollHeight;
+                }
+            });
+        }
+
+        function sendMsg(textId, sender, uid, imgUrl = null) {
+            const input = document.getElementById(textId);
+            const text = input.value.trim();
+            if(!text && !imgUrl) return;
+            push(ref(db, 'chats/' + uid), { sender, text, imageUrl: imgUrl || "", timestamp: serverTimestamp() });
+            input.value = '';
+        }
+
+        document.getElementById('clientSendBtn').addEventListener('click', () => sendMsg('clientMsgInput', 'user', currentUser.id));
+        document.getElementById('clientMsgInput').addEventListener('keypress', (e) => { if(e.key==='Enter') sendMsg('clientMsgInput', 'user', currentUser.id); });
+        
+        document.getElementById('attachBtn').addEventListener('click', () => document.getElementById('imageInput').click());
+        document.getElementById('imageInput').addEventListener('change', async function() {
+            if(this.files && this.files[0]) {
+                const url = await uploadImageToImgBB(this.files[0], 'loader');
+                if(url) sendMsg('clientMsgInput', 'user', currentUser.id, url);
+                this.value='';
+            }
+        });
+
+        // --- VIDEO CALL LOGIC (Client Side) ---
+        function listenForVideoCall(uid) {
+            onValue(ref(db, 'videocall/' + uid), (snapshot) => {
+                const data = snapshot.val();
+                const alertBox = document.getElementById('clientVideoAlert');
+                if(data && data.active && data.roomId) {
+                    alertBox.style.display = 'block';
+                    alertBox.classList.add('video-btn-active');
+                    alertBox.onclick = () => {
+                        window.open(`https://meet.jit.si/${data.roomId}`, '_blank');
+                    };
+                    // Ensure chat is open so they see it
+                    document.getElementById('clientChat').style.display = 'flex';
+                } else {
+                    alertBox.style.display = 'none';
+                    alertBox.classList.remove('video-btn-active');
+                }
+            });
+        }
+
+        // --- Admin Panel Logic ---
+        document.getElementById('secretAdminBtn').addEventListener('click', () => {
+            if(prompt("Master Password:") === "Himanshu@123") {
+                document.getElementById('adminPanel').style.display = 'flex';
+                loadAdminUsers();
+            }
+        });
+        document.getElementById('closeAdminBtn').addEventListener('click', () => document.getElementById('adminPanel').style.display = 'none');
+
+        // Load Users + Delete User Feature
+        function loadAdminUsers() {
+            onValue(ref(db, 'users'), (snapshot) => {
+                const list = document.getElementById('adminUserList');
+                list.innerHTML = '';
+                const users = snapshot.val();
+                if(users) {
+                    Object.keys(users).forEach(uid => {
+                        const u = users[uid];
+                        const div = document.createElement('div');
+                        div.className = 'user-item';
+                        div.innerHTML = `
+                            <div onclick="window.openAdminChat('${uid}', '${u.name}')" style="flex:1;">
+                                <strong class="text-[#D4AF37] font-serif text-lg tracking-wide">${u.name}</strong><br>
+                                <span class="text-xs text-white/50">${u.phone}</span>
+                            </div>
+                            <button onclick="window.deleteUser('${uid}')" title="Remove Client" class="text-red-500 hover:text-red-300 p-2 material-symbols-outlined transition-colors">delete</button>
+                        `;
+                        list.appendChild(div);
+                    });
+                }
+            });
+        }
+
+        // Global functions for Admin dynamic HTML clicks
+        window.openAdminChat = (uid, name) => {
+            activeAdminChatUserId = uid;
+            document.getElementById('adminChatHeader').innerText = "Client: " + name;
+            document.getElementById('adminMsgInput').disabled = false;
+            document.getElementById('adminSendBtn').disabled = false;
+            
+            // Show Start Video button
+            const videoBtn = document.getElementById('adminStartVideoBtn');
+            videoBtn.style.display = 'flex';
+            
+            // Check current call status for button text
+            onValue(ref(db, 'videocall/' + uid), (snap) => {
+                const d = snap.val();
+                if(d && d.active) {
+                    videoBtn.innerHTML = '<span class="material-symbols-outlined">call_end</span> End Call';
+                    videoBtn.style.background = '#5C001E';
+                    videoBtn.style.color = '#fff';
+                    videoBtn.onclick = () => endVideoCall(uid);
+                } else {
+                    videoBtn.innerHTML = '<span class="material-symbols-outlined">videocam</span> Start Call';
+                    videoBtn.style.background = 'linear-gradient(to right, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C)';
+                    videoBtn.style.color = '#000';
+                    videoBtn.onclick = () => startVideoCall(uid);
+                }
+            });
+
+            onValue(ref(db, 'chats/' + uid), (snapshot) => {
+                const box = document.getElementById('adminChatMessages');
+                box.innerHTML = '';
+                const data = snapshot.val();
+                if(data) {
+                    Object.values(data).forEach(msg => {
+                        const isAdmin = msg.sender === 'admin';
+                        let html = `<div class="message ${isAdmin ? 'msg-user' : 'msg-admin'}">`;
+                        if(msg.text) html += `<div>${msg.text}</div>`;
+                        if(msg.imageUrl) html += `<img src="${msg.imageUrl}">`;
+                        html += `<div style="font-size:9px; text-align:right; margin-top:4px; opacity:0.7">${formatTime(msg.timestamp)}</div></div>`;
+                        box.innerHTML += html;
+                    });
+                    box.scrollTop = box.scrollHeight;
+                }
+            });
+        };
+
+        window.deleteUser = (uid) => {
+            if(confirm("Are you sure you want to permanently delete this client and their chat history?")) {
+                remove(ref(db, 'users/' + uid));
+                remove(ref(db, 'chats/' + uid));
+                remove(ref(db, 'videocall/' + uid));
+                if(activeAdminChatUserId === uid) {
+                    activeAdminChatUserId = null;
+                    document.getElementById('adminChatMessages').innerHTML = '';
+                    document.getElementById('adminChatHeader').innerText = 'Select a VIP Client';
+                    document.getElementById('adminStartVideoBtn').style.display = 'none';
+                    document.getElementById('adminMsgInput').disabled = true;
+                    document.getElementById('adminSendBtn').disabled = true;
+                }
+            }
+        };
+
+        // --- VIDEO CALL LOGIC (Admin Side) ---
+        function startVideoCall(uid) {
+            const roomId = "VelvetTouchVIP_" + uid + "_" + Math.floor(Math.random()*10000);
+            set(ref(db, 'videocall/' + uid), { active: true, roomId: roomId }).then(() => {
+                window.open(`https://meet.jit.si/${roomId}`, '_blank');
+            });
+        }
+        function endVideoCall(uid) {
+            remove(ref(db, 'videocall/' + uid));
+        }
+
+        document.getElementById('adminSendBtn').addEventListener('click', () => sendMsg('adminMsgInput', 'admin', activeAdminChatUserId));
+        document.getElementById('adminMsgInput').addEventListener('keypress', (e) => { if(e.key==='Enter') sendMsg('adminMsgInput', 'admin', activeAdminChatUserId); });
+        
+        document.getElementById('adminAttachBtn').addEventListener('click', () => document.getElementById('adminImageInput').click());
+        document.getElementById('adminImageInput').addEventListener('change', async function() {
+            if(this.files && this.files[0]) {
+                if(!activeAdminChatUserId) return alert("Select user first");
+                const url = await uploadImageToImgBB(this.files[0], 'adminLoader');
+                if(url) sendMsg('adminMsgInput', 'admin', activeAdminChatUserId, url);
+                this.value='';
+            }
+        });
+    </script>
+</body>
+</html>
